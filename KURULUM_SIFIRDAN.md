@@ -41,3 +41,6 @@ adresini açın. `ok: true` dönmelidir.
 ## Önemli
 
 `students does not exist` gibi hata alırsanız migration dosyalarını tekrar tekrar çalıştırmayın. Önce `00_BASE_SCHEMA.sql` başarılı şekilde çalışmış olmalıdır.
+
+## Vercel Hobby plan notu
+Bu sürüm API uçlarını tek bir catch-all Serverless Function altında toplar. Böylece Vercel Hobby planındaki 12 Serverless Function sınırına takılmaz. API kaynak kodları `server/` altında, tek Vercel Function ise `api/[...path].js` dosyasındadır.
